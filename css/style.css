@@ -55,10 +55,21 @@ a:hover {
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   float: left;
   width: 536px;
   height: 300px;
   overflow: hidden;
+}
+
+.main > * {
+  opacity: 0;
+}
+
+.main:hover > * {
+  opacity: 1;
 }
 
 .depressed {
@@ -147,8 +158,4 @@ ul.bookmarks a {
   width: 14px;
   height: 14px;
   margin-right: 6px;
-}
-
-#greeting {
-  margin-top: 4rem;
 }
