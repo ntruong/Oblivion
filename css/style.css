@@ -47,11 +47,11 @@ a:hover {
   background: #ffffff;
   border: 1px solid #cccccc;
   border-radius: 2px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .panel:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .main {
@@ -124,7 +124,7 @@ ul.bookmarks a {
 
 #viewport {
   position: relative;
-  width: 672px;
+  width: 674px;
   height: 320px;
 }
 
@@ -139,9 +139,29 @@ ul.bookmarks a {
   right: 0;
   width: 130px;
   height: 320px;
-  background: url("../res/img/goyard-pale.png");
-  background-repeat: repeat;
-  background-position: center;
+  overflow: hidden;
+}
+
+#sidebar .top {
+  fill: #f8f8f8;
+}
+
+#sidebar .left {
+  fill: #f2f2f2;
+}
+
+#sidebar .right {
+  fill: #eeeeee;
+}
+
+#sidebar .path {
+  stroke: #dddddd;
+  stroke-width: 1px;
+  stroke-dasharray: 300;
+  fill-opacity: 0;
+  transition: 1s linear;
+  animation: draw 1s linear forwards,
+             color 0.5s 0.5s linear forwards;
 }
 
 #navbar {
@@ -158,4 +178,22 @@ ul.bookmarks a {
   width: 14px;
   height: 14px;
   margin-right: 6px;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes color {
+  from {
+    fill-opacity: 0;
+  }
+  to {
+    fill-opacity: 1;
+  }
 }
