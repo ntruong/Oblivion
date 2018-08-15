@@ -5,12 +5,12 @@ const bookmarks = [
     red: "http://redacted.ch/login.php",
     git: "https://github.com/login",
     ucf: "https://texasucf.slack.com",
-    mail: "https://inbox.google.com"
+    hn: "https://news.ycombinator.com/"
   },
   {
     canvas: "https://canvas.utexas.edu/",
     piazza: "https://www.piazza.com/",
-    ocr: "https://msb-utexas-csm.symplicity.com/",
+    mail: "https://inbox.google.com",
     drive: "https://drive.google.com/"
   }
 ];
