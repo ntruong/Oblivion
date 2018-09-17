@@ -4,14 +4,14 @@ const bookmarks = [
   {
     red: "http://redacted.ch/login.php",
     git: "https://github.com/login",
-    ucf: "https://texasucf.slack.com",
-    hn: "https://news.ycombinator.com/"
+    hn: "https://news.ycombinator.com/",
+    dt: "http://www.datatau.com/news"
   },
   {
-    canvas: "https://canvas.utexas.edu/",
-    piazza: "https://www.piazza.com/",
+    cv: "https://canvas.utexas.edu/",
+    pz: "https://www.piazza.com/",
     mail: "https://inbox.google.com",
-    drive: "https://drive.google.com/"
+    ucf: "https://texasucf.slack.com"
   }
 ];
 
