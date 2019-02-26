@@ -54,26 +54,22 @@ a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-.main {
+#main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   float: left;
   width: 536px;
-  height: 300px;
+  height: 320px;
   overflow: hidden;
 }
 
-.main > * {
+#main > * {
   opacity: 0;
 }
 
-.main:hover > * {
+#main:hover > * {
   opacity: 1;
-}
-
-.depressed {
-  background: #dddddd;
 }
 
 .hidden {
@@ -162,22 +158,6 @@ ul.bookmarks a {
   transition: 1s linear;
   animation: draw 1s linear forwards,
              color 0.5s 0.5s linear forwards;
-}
-
-#navbar {
-  position: absolute;
-  bottom: 0;
-  width: 536px;
-  height: 14px;
-}
-
-#navbar a {
-  float: left;
-  line-height: 0;
-  font-size: 0;
-  width: 14px;
-  height: 14px;
-  margin-right: 6px;
 }
 
 @keyframes draw {

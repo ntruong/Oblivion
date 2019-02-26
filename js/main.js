@@ -62,41 +62,6 @@ function reveal(node) {
   Array.prototype.forEach.call(node.children, reveal);
 };
 
-// Focus a given main panel, passed an anchor (nav button) as an argument
-function focus(anchor) {
-  var panelId = Array.prototype.indexOf.call(anchor.parentNode.children, anchor);
-
-  var active = document.querySelectorAll(".main:not(.hidden)")[0];
-  obfuscate(active, hide=false);
-  window.setTimeout(() => {
-    active
-      .classList
-      .add("hidden");
-    $("navbar").getElementsByClassName("depressed")[0]
-      .classList
-      .remove("depressed");
-  }, 200);
-
-  // Delay so the main panels don't appear at the same time
-  var inactive = document.getElementsByClassName("main")[panelId];
-  window.setTimeout(() => {
-    inactive
-      .classList
-      .remove("hidden");
-    $("navbar").children[panelId]
-      .classList
-      .add("depressed");
-  }, 550);
-  window.setTimeout(() => reveal(inactive), 750);
-};
-
-// Listen for nav button clicks to focus the appropriate panel
-document.addEventListener("click", function(event) {
-  if (Array.prototype.indexOf.call($("navbar").children, event.target) != -1) {
-    focus(event.target);
-  };
-});
-
 // Load extras when the document is ready
 document.addEventListener("DOMContentLoaded", function() {
   $("bookmarks").appendChild(buildBookmarks(bookmarks));
