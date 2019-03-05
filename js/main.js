@@ -4,13 +4,11 @@ const bookmarks = [
   {
     red: "http://redacted.ch/login.php",
     git: "https://github.com/login",
-    hn: "https://news.ycombinator.com/",
-    dt: "http://www.datatau.com/news"
+    hn: "https://news.ycombinator.com/"
   },
   {
     cv: "https://canvas.utexas.edu/",
     pz: "https://www.piazza.com/",
-    mail: "https://inbox.google.com",
     ucf: "https://texasucf.slack.com"
   }
 ];
