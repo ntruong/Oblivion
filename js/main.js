@@ -39,7 +39,7 @@ function buildBookmarks(links) {
 function greet() {
   var d = new Date();
   var n = d.getHours();
-  var msg = 'good ';
+  var msg = "good ";
 
   if      ( n >= 22 || n == 0  ) { msg += "night"; }
   else if ( n >= 1  && n <= 4  ) { msg += "night"; }
