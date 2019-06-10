@@ -102,14 +102,14 @@ ul.bookmarks > li:hover ul {
   border-bottom: 2px solid #000000;
 }
 
-ul.bookmarks svg {
+ul.bookmarks span {
   display: block;
   margin: 0 auto;
   width: 1rem;
   opacity: 0;
 }
 
-ul.bookmarks > li:hover svg {
+ul.bookmarks > li:hover span {
   opacity: 1;
 }
 

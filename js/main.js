@@ -1,4 +1,4 @@
-const arrow = "<svg viewBox=\"0 0 1024 512\"><path d=\"M0 0 L512 512 L1024 0 L824 0 L512 312 L200 0Z\"/></svg>";
+const listSymbol = "<span>×</span>";
 
 const bookmarks = [
   {
@@ -28,7 +28,7 @@ function buildBookmarks(links) {
     for (var key in dict) {
       col.innerHTML += "<li><a href=\"" + dict[key] + "\">" + key + "</a></li>";
     };
-    li.innerHTML += arrow;
+    li.innerHTML += listSymbol;
     li.appendChild(col);
     container.appendChild(li);
   });
