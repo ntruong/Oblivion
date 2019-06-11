@@ -104,6 +104,7 @@ ul.bookmarks > li:hover ul {
 
 ul.bookmarks span {
   display: block;
+  text-decoration: underline;
   margin: 0 auto;
   width: 1rem;
   opacity: 0;
