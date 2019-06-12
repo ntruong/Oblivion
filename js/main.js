@@ -1,4 +1,4 @@
-const listSymbol = "<span>×</span>";
+const listSymbol = "×";
 
 const bookmarks = [
   {
@@ -28,7 +28,7 @@ function buildBookmarks(links) {
     for (var key in dict) {
       col.innerHTML += "<li><a href=\"" + dict[key] + "\">" + key + "</a></li>";
     };
-    li.innerHTML += listSymbol;
+    li.innerHTML += "<span>" + listSymbol + "</span>";
     li.appendChild(col);
     container.appendChild(li);
   });
