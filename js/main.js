@@ -4,14 +4,14 @@ const bookmarks = [
   {
     red: "http://redacted.ch/login.php",
     git: "https://github.com/login",
-    hn:  "https://news.ycombinator.com/",
-    fin: "https://finance.google.com/"
+    ucf: "https://texasucf.slack.com",
+    dc:  "https://discord.com/login",
   },
   {
-    cv:  "https://canvas.utexas.edu/",
-    pz:  "https://www.piazza.com/",
-    ucf: "https://texasucf.slack.com",
-    ust: "https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yield"
+    bbg: "https://www.bloomberg.com",
+    fin: "https://finance.google.com/",
+    ust: "https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yield",
+    hn:  "https://news.ycombinator.com/",
   }
 ];
 
