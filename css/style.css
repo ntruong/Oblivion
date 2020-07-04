@@ -79,10 +79,12 @@ a:hover {
   padding: 0;
 }
 
-.hiddenV {
-  max-height: 0;
-  border: none;
-  padding: 0;
+.hiddenV > * {
+  opacity: 0;
+}
+
+.hiddenV:hover > * {
+  opacity: 1;
 }
 
 ul.bookmarks {
