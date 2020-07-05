@@ -4,12 +4,12 @@ const bookmarks = [
   {
     red: "https://redacted.ch/login.php",
     git: "https://github.com/login",
-    ucf: "https://texasucf.slack.com",
     dc:  "https://discord.com/login",
+    gh:  "https://geekhack.org/index.php?action=login",
   },
   {
+    ucf: "https://texasucf.slack.com",
     bbg: "https://www.bloomberg.com",
-    fin: "https://finance.google.com/",
     ust: "https://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yield",
     hn:  "https://news.ycombinator.com/",
   }
