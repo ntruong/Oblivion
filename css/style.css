@@ -96,12 +96,13 @@ ul.bookmarks > li {
   float: left;
   width: 75px;
   overflow: hidden;
-}
-
-ul.bookmarks > li:hover ul {
-  max-height: 100rem;
   padding-bottom: 0.2rem;
   border-bottom: 2px solid #000000;
+  opacity: 0;
+}
+
+ul.bookmarks > li:hover {
+  opacity: 1;
 }
 
 ul.bookmarks span {
