@@ -2,7 +2,7 @@ const listSymbol = "×";
 
 const bookmarks = [
   {
-    red: "http://redacted.ch/login.php",
+    red: "https://redacted.ch/login.php",
     git: "https://github.com/login",
     ucf: "https://texasucf.slack.com",
     dc:  "https://discord.com/login",
