@@ -24,17 +24,14 @@ ul {
 h1, a {
   color: #444444;
   opacity: 0.5;
-  font-weight: 300;
+  font-weight: normal;
 }
 
 h1 {
   text-align: center;
-  font-weight: normal;
 }
 
 a {
-  color: #444444;
-  opacity: 0.5;
   text-decoration: none;
 }
 
@@ -54,6 +51,14 @@ a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
+.hidden > * {
+  opacity: 0;
+}
+
+.hidden:hover > * {
+  opacity: 1;
+}
+
 #main {
   display: flex;
   flex-direction: column;
@@ -64,27 +69,8 @@ a:hover {
   overflow: hidden;
 }
 
-#main > * {
-  opacity: 0;
-}
-
-#main:hover > * {
-  opacity: 1;
-}
-
-.hidden {
-  max-width: 0 !important;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.hiddenV > * {
-  opacity: 0;
-}
-
-.hiddenV:hover > * {
-  opacity: 1;
+#greeting #bookmarks {
+  position: relative;
 }
 
 ul.bookmarks {
@@ -94,27 +80,18 @@ ul.bookmarks {
 
 ul.bookmarks > li {
   float: left;
-  width: 75px;
-  overflow: hidden;
-  padding-bottom: 0.2rem;
-  border-bottom: 2px solid #000000;
-  opacity: 0;
 }
 
-ul.bookmarks > li:hover {
-  opacity: 1;
+li > ul {
+  width: 75px;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid #000000;
 }
 
 ul.bookmarks span {
   display: block;
-  text-decoration: underline;
   margin: 0 auto;
   width: 1rem;
-  opacity: 0;
-}
-
-ul.bookmarks > li:hover span {
-  opacity: 1;
 }
 
 ul.bookmarks a {

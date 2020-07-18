@@ -20,11 +20,12 @@ function $(id) { return document.getElementById(id); };
 // Create a list of lists of links to create a bookmark menu
 function buildBookmarks(links) {
   var container = document.createElement("ul");
-  container.classList.add("bookmarks");
+  container.classList.add("bookmarks", "hidden");
   links.forEach((dict, idx, ls) => {
     var li = document.createElement("li");
+    li.classList.add("hidden");
     var col = document.createElement("ul");
-    col.classList.add("hiddenV");
+    col.classList.add("hidden");
     for (var key in dict) {
       col.innerHTML += "<li><a href=\"" + dict[key] + "\">" + key + "</a></li>";
     };
