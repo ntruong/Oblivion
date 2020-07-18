@@ -50,18 +50,6 @@ function greet() {
   return "<h1>" + msg + "</h1>";
 };
 
-// Hide all children (recursively) of a given node
-function obfuscate(node, hide = true) {
-  if (hide) { node.style.visibility = "hidden"; };
-  Array.prototype.forEach.call(node.children, (x) => obfuscate(x));
-};
-
-// Reveal all children (recursively) of a given node
-function reveal(node) {
-  node.style.visibility = "visible";
-  Array.prototype.forEach.call(node.children, reveal);
-};
-
 // Load extras when the document is ready
 document.addEventListener("DOMContentLoaded", function() {
   $("bookmarks").appendChild(buildBookmarks(bookmarks));
